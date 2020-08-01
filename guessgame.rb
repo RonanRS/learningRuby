@@ -1,0 +1,20 @@
+secret_word = "Learning"
+guess = ""
+guess_limit = 3
+guess_count = 0
+out_of_guesses = false
+
+while guess != secret_word and !out_of_guesses
+    if guess_count < guess_limit
+        puts "Enter your guess: "
+        guess = gets.chomp()
+        guess_count += 1
+    else
+        out_of_guesses = true    
+    end
+end
+if out_of_guesses == true
+    puts "You lose!"
+else    
+    puts "You won!"
+end
