@@ -12,4 +12,9 @@ book1 = Book.new() #Object
     book2.author = "Jhon Green"
     book2.pages = 400
 
-    puts book2.title
+    book3 = Book.new()
+    book3.title = "The Lord of the Rings"
+    book3.author = "Tolkien"
+    book3.pages = 600
+
+    puts book3.title
